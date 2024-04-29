@@ -1,1 +1,1 @@
-# python-studies-trybe
+# Python Studies: @Trybe Full-Stack Bootcamp
