@@ -1,0 +1,5 @@
+-r requirements.txt
+
+
+black==23.3.0  # black is a code formatter
+flake8==4.0.1  # flake8 is a linter
