@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Movies Catalog</title>
+</head>
+<body>
+    <h1>Movies Catalog</h1>
+    <form action="/" method="POST">
+        <input type="text" name="title" placeholder="Enter movie title">
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+        {% for movie in movies %}
+        <li class="movie">
+            <a href="/movies/{{ movie.id }}">
+                <img src="{{ movie.poster }}" alt="{{ movie.title }}">
+                <h2>{{ movie.title }}</h2>
+                <p>Year: {{ movie.year }}</p>
+                <p>Director: {{ movie.director }}</p>
+                <p>Genre: {{ movie.genre }}</p>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

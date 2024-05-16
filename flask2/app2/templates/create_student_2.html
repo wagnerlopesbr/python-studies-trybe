@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Student</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Student</h1>
+        <form action="/create" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="enrollment">Enrollment:</label>
+                <input type="text" id="enrollment" name="enrollment" required>
+            </div>
+            <button class="button" type="submit">Create</button>
+        </form>
+        <a class="button" href="/students">Back</a>    
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='filme.css') }}">
+    <title>Movie Details</title>
+</head>
+<body>
+    {% if movie %}
+    <section class="movie">
+        <h1>{{ movie.title }}</h1>
+        <p>Year: {{ movie.year }}</p>
+        <p>Director: {{ movie.director }}</p>
+        <p>Genre: {{ movie.genre }}</p>
+        <img src="{{ movie.poster }}" alt="{{ movie.title }}">
+    </section>
+    {% else %}
+    <p>Movie not found!</p>
+    {% endif %}
+</body>
+</html>
