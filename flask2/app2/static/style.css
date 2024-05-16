@@ -1,0 +1,100 @@
+/* Reset default margin and padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pexels-background.jpg');
+    background-size: cover;
+}
+
+/* Main container style */
+.container {
+    width: 80%;
+    max-width: 800px; /* Set the maximum width as desired */
+    margin: 10% auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background for better readability */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title style */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Table style */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table cells style */
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Table header style */
+table th {
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+/* Link style */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Link hover style */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button style */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Button hover style */
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Form style */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Input fields style */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Form submission button style */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Form submission button hover style */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
