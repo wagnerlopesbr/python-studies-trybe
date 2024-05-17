@@ -15,17 +15,13 @@ tasks = [
 @task_blueprint.route("/", methods=["GET", "POST"])  # Exercise 4.7
 def tasks_view():
     if request.method == "POST":  # Exercise 4.9
-        title = request.form["title"]
+        title = request.form["task_title"]
         new_task = Task(len(tasks) + 1, title)
         tasks.append(new_task)
-
     return render_template("tasks.html", tasks=tasks)
 
 
 @task_blueprint.route("/complete/<int:task_id>")  # Exercise 4.10
 def complete_task(task_id):
-    for task in tasks:
-        if task.id == task_id:
-            task.completed = True
-
+    [setattr(task, "completed", True) for task in tasks if task.id == task_id]
     return render_template("tasks.html", tasks=tasks)
