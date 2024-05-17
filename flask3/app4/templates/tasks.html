@@ -1,0 +1,29 @@
+<!-- Exercise 4.3 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 4</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <h2>Tasks:</h2>
+    <ul>
+        {% for task in tasks %}  <!-- Exercise 4.4 -->
+            <li {% if task.completed %}class="completed"{% endif %}>
+                {{ task.title }}
+                {% if not task.completed %}
+                    <form method="GET" action="/complete/{{ task.id }}">
+                        <button type="submit">Conclude</button>  <!-- Exercise 4.5 -->
+                    </form>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+    <h2>Add Task:</h2>
+    <form method="POST" action="/">  <!-- Exercise 4.8 -->
+        <input type="text" name="title" placeholder="Type the task number" required>
+        <button type="submit">Add</button>
+    </form>
+</body>
+</html>
