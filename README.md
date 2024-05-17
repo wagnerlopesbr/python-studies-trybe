@@ -1,1 +1,1 @@
-# Python Studies: @Trybe Full-Stack Bootcamp
+# Python Studies: @Trybe Full-Stack Web Development Bootcamp
