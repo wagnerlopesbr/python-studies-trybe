@@ -34,10 +34,10 @@ Create a movie catalog using Flask, Jinja2 and MongoDB; (app3/app_3.py)
 
 #### Requisite:
 <ul>
-    <li><b>01. </b>Create and organize the folders structure like the image below.<br>![Print3.01](image/folders-structure.png)</li>
-    <li><b>02. </b>In "models/film.py", define the "Film" class with these attributes and methods:<br>![Print3.02](image/film-class.png)</li>
+    <li><b>01. </b>Create and organize the folders structure like the image below.<br><img src="image/folders-structure.png" alt="Print3.01"></li>
+    <li><b>02. </b>In "models/film.py", define the "Film" class with these attributes and methods:<br><img src="image/film-class.png" alt="Print3.02"></li>
     <li><b>03. </b>Create the database connection on the "models/db.py" file.</li>
-    <li><b>04. </b>In "controllers/film_controller.py", define the "FilmController" class with these methods:<br>![Print3.04](image/film-controller-class.png)</li>
-    <li><b>05. </b>Create "app_3.py" file, import the necessary Flask modules, models and controllers, then define these routes:<br>![Print3.05](image/routes.png)</li>
+    <li><b>04. </b>In "controllers/film_controller.py", define the "FilmController" class with these methods:<br><img src="image/film-controller-class.png" alt="Print3.04"></li>
+    <li><b>05. </b>Create "app_3.py" file, import the necessary Flask modules, models and controllers, then define these routes:<br><img src="image/routes.png" alt="Print3.05"></li>
     <li><b>06. </b>Create the HTML templates in "templates" folder.</li>
 </ul>
