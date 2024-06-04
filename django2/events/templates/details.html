@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ event.title }}
+{% endblock %}
+
+
+{% block content %}
+    <h1>{{ event.title }}</h1>
+    <p>{{ event.description }}</p>
+    <p>{{ event.date|date }} - {{ event.location }}</p>
+    {% if event.image %}
+        <img src="{% static event.image.url %}" alt="Event about {{ event.title }}" height="50">
+    {% endif %}
+    {% if event.is_remote %}
+        <p>Remote Event!</p>
+    {% else %}
+        <p>Presencial Event!</p>
+    {% endif %}
+    <p><a href="{% url 'home-page' %}">Return</a></p>
+{% endblock %}
