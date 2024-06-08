@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Marketplace APP
+{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Marketplace!</hh1>
+    <ul>
+        <li><a href="{% url 'product' %}">Create Product</a></li>
+        <li><a href="{% url 'seller' %}">Create Seller</a></li>
+        <li><a href="{% url 'buyer' %}">Create Buyer</a></li>
+        <li><a href="{% url 'order' %}">Create Order</a></li>
+    </ul>
+{% endblock %}
