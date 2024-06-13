@@ -1,6 +1,6 @@
 # Django5 README
 
-## Auth
+## Auth 
 
 ##### ***"  -  " means DELETED LINES***
 ##### ***"  +  " means ADDED LINES***
